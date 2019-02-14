@@ -1,0 +1,19 @@
+$icons: (
+  logo
+);
+
+.icon {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+  vertical-align: middle;
+}
+
+@each $icon in $icons {
+  .icon--#{$icon} {
+    background-image: url('../icons/#{$icon}.svg');
+  }
+}

@@ -17,7 +17,7 @@ if (process.env.NODE_ENV === 'development') {
     },
     plugins: [
       new StyleLintPlugin({
-        context: 'themes/app/src/',
+        context: 'themes/ahkuoi/src/',
         files: ['**/*.{scss,vue}'],
       }),
     ],
@@ -26,13 +26,13 @@ if (process.env.NODE_ENV === 'development') {
   mix.sourceMaps();
 }
 
-mix.js('themes/app/src/js/app.js', 'themes/app/dist/')
-  .sass('themes/app/src/scss/app.scss', 'themes/app/dist/')
+mix.js('themes/ahkuoi/src/js/app.js', 'themes/ahkuoi/dist/')
+  .sass('themes/ahkuoi/src/scss/app.scss', 'themes/ahkuoi/dist/')
   .options({ processCssUrls: false });
 
 if (process.env.NODE_ENV === 'production') {
-  mix.minify('themes/app/dist/app.css')
-    .minify('themes/app/dist/app.js');
+  mix.minify('themes/ahkuoi/dist/app.css')
+    .minify('themes/ahkuoi/dist/app.js');
 }
 
 
