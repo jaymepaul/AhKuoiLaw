@@ -5,13 +5,13 @@
   "author": "your name <you@silverstripe.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "watch": "NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "hot": "NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "production": "NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "dev": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "hot": "cross-env NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
     "lint": "yarn lint-js && yarn lint-scss",
-    "lint-js": "eslint --ext .js,.vue themes/app/src/js",
-    "lint-scss": "stylelint themes/app/src/scss/**/*.scss themes/app/src/js/**/*.vue",
+    "lint-js": "eslint --ext .js,.vue themes/ahkuoi/src/js",
+    "lint-scss": "stylelint themes/ahkuoi/src/scss/**/*.scss themes/ahkuoi/src/js/**/*.vue",
     "nightwatch": "nightwatch -c ./.nightwatch.conf.js"
   },
   "dependencies": {
@@ -22,6 +22,7 @@
     "babel-preset-vue": "^2.0.2",
     "bootstrap": "^4.1.0",
     "chromedriver": "^2.33.2",
+    "cross-env": "^5.2.0",
     "cucumber": "^4.0.0",
     "eslint": "^4.19.1",
     "eslint-config-airbnb-base": "^12.1.0",
