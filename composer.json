@@ -35,8 +35,7 @@
             "web.config"
         ],
         "expose": [
-            "themes/ahkuoi/dist",
-            "themes/ahkuoi/src/images"
+            "themes/ahkuoi/dist"
         ]
     }
 }

@@ -1,5 +1,3 @@
-<% include Header %>
-
 <main class="container">
     <div class="row">
         <article class="col">
@@ -12,6 +10,3 @@
         $Form
     <% end_if %>
 </main>
-
-<% include Footer %>
-

@@ -1,8 +1,38 @@
 /**
- * Application variables
- */
+* Bootstrap
+*/
+$font-size-base: 10px;
+$font-path: '../fonts' !default;
 
 /**
- * Bootstrap variable overrides
- */
-$font-path: '../fonts' !default;
+* Colors
+*/
+$midnight: #232930;
+$denim: #2E3640;
+$dark-gray: #4A4A4A;
+$mid-gray: #C0C2C4;
+$light-gray: #F2F5F6;
+$light-green: #03AD5F;
+$green: #008046;
+$dark-green: #00805E;
+$light-blue: #00A4C2;
+$dark-blue: #00798F;
+$blue: #00328F;
+$white: #FFF;
+$black: #000;
+$black-submenu: #2D2D2D;
+$orange: #FDAD02;
+$red: #D34700;
+$bright-gray: #373F4C;
+$green-haze: #01A957;
+$purple: #5C2A82;
+$yellow: #8F6200;
+
+/**
+* Font Weights
+*/
+$font-weight-bold: 700;
+$font-weight-medium: 500;
+$font-weight-regular: 400;
+$font-weight-light: 300;
+$font-weight-extra-light: 200;

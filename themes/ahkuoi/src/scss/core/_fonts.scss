@@ -1,6 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
 @font-face {
   font-family: 'Raleway';
   font-style: normal;
-  font-weight: 400;
-  src: url('#{$font-path}/FiraSans-Regular.ttf') format('ttf');
+  font-weight: $font-weight-extra-light;
+  src: url('#{$font-path}/Raleway-ExtraLight.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: italic;
+  font-weight: $font-weight-extra-light;
+  src: url('#{$font-path}/Raleway-ExtraLightItalic.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: $font-weight-light;
+  src: url('#{$font-path}/Raleway-Light.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: italic;
+  font-weight: $font-weight-light;
+  src: url('#{$font-path}/Raleway-LightItalic.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: $font-weight-regular;
+  src: url('#{$font-path}/Raleway-Regular.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: italic;
+  font-weight: $font-weight-regular;
+  src: url('#{$font-path}/Raleway-Italic.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: $font-weight-medium;
+  src: url('#{$font-path}/Raleway-Medium.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: italic;
+  font-weight: $font-weight-medium;
+  src: url('#{$font-path}/Raleway-MediumItalic.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: $font-weight-bold;
+  src: url('#{$font-path}/Raleway-Bold.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: italic;
+  font-weight: $font-weight-bold;
+  src: url('#{$font-path}/Raleway-BoldItalic.ttf') format('ttf');
 }
