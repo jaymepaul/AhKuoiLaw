@@ -1,0 +1,30 @@
+/**
+ * Include bootstrap functionality as needed.
+ */
+@import '~bootstrap/scss/bootstrap-grid';
+@import '~bootstrap/scss/mixins';
+@import '~bootstrap/scss/tables';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/utilities';
+@import '~bootstrap/scss/alert';
+@import '~bootstrap/scss/buttons';
+@import '~bootstrap/scss/forms';
+
+/**
+ * We must include our variables before bootstrap,
+ * otherwise bootstrap overrides our values.
+ */
+@import 'core/variables';
+
+/**
+* Include Typography and other theme styles
+*/
+@import 'core/fonts';
+@import 'core/typography';
+@import 'core/core';
+
+/**
+ * Include components
+ */
+@import 'components/flyout-panel';
+@import 'components/header';

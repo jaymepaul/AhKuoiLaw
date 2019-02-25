@@ -1,0 +1,64 @@
+.header {
+  padding: 30px 0;
+
+  &__logo-title {
+    color: $dark-gray;
+    margin: 0 0 5px 0;
+  }
+
+  &__logo-subtitle {
+    margin: 0;
+    font-size: 1.4rem;
+  }
+
+  &__logo {
+    text-decoration: none;
+    float: left;
+    margin-left: -25px;
+
+    &:hover {
+      text-decoration: none;
+
+      .header__logo-title,
+      .header__logo-subtitle {
+        opacity: 0.85;
+      }
+    }
+  }
+
+  &__logo-img {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &__logo-content {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: -10px;
+  }
+
+  &__nav {
+    float: right;
+    text-align: right;
+    margin-top: 22px;
+  }
+
+  &__nav-contact {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+  }
+
+  &__nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 450px;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__nav-link {
+    font-size: 2rem;
+  }
+}

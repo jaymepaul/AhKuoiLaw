@@ -1,0 +1,232 @@
+html,
+body {
+  font-size: $font-size-base;
+  font-family: 'Raleway', sans-serif;
+}
+
+img.center {
+  margin: 0 auto;
+  display: block;
+}
+
+img.leftAlone {
+  @extend .float-left;
+
+  padding: 0 1rem 1rem 0;
+  display: block;
+}
+
+img.leftAlone + * {
+  clear: both;
+}
+
+img.rightAlone {
+  @extend .float-right;
+
+  padding: 0 0 1rem 1rem;
+  display: block;
+}
+
+img.left {
+  float: left;
+  padding: 0 1rem 1rem 0;
+}
+
+img.right {
+  float: right;
+  padding: 0 0 1rem 1rem;
+}
+
+/**
+* Headings
+*/
+h1 {
+  color: $dark-blue;
+  font-size: 4.5rem;
+  font-weight: $font-weight-extra-light;
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: $font-weight-light;
+  line-height: 1.3;
+
+  @include media-breakpoint-up(md) {
+    font-size: 3.2rem;
+    line-height: 1.125;
+  }
+}
+
+h3 {
+  color: $denim;
+  font-size: 2.4rem;
+  font-weight: $font-weight-medium;
+  line-height: 1.08;
+}
+
+h4 {
+  color: $denim;
+  font-size: 1.8rem;
+  font-weight: $font-weight-medium;
+  line-height: 1.1;
+}
+
+/**
+* General
+*/
+p,
+label,
+span,
+th,
+td {
+  font-size: 1.6rem;
+  font-weight: $font-weight-regular;
+  line-height: 1.5;
+}
+
+p {
+  color: $denim;
+}
+
+blockquote {
+  border-left: 6px solid $mid-gray;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 18px;
+}
+
+.lead {
+  color: $denim;
+  font-size: 2rem;
+  font-weight: $font-weight-light;
+  line-height: 1.5;
+  margin-top: 5px;
+}
+
+/**
+* Links
+*/
+a {
+  color: $dark-green;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+/**
+* Tables
+*/
+table {
+  border-spacing: unset;
+  margin-bottom: 10px;
+
+  tr {
+    text-align: center;
+  }
+
+  th,
+  td {
+    padding: 2rem;
+    vertical-align: top;
+  }
+
+  th {
+    background-color: darken($dark-green, 4%);
+    color: $white;
+    font-weight: $font-weight-medium;
+  }
+
+  tbody {
+    tr:not(:last-child) {
+      th,
+      td {
+        border-bottom: 2px solid $mid-gray;
+      }
+    }
+
+    tr:last-child {
+      th,
+      td {
+        border-bottom: 3px solid $mid-gray;
+      }
+    }
+  }
+}
+
+/**
+* Forms
+*/
+form {
+  .form-control {
+    &:focus {
+      border-color: $light-blue;
+      box-shadow: 0 0 0 0.15rem $light-blue;
+    }
+  }
+}
+
+/**
+* Lists
+*/
+li {
+  color: $denim;
+  font-size: 1.6rem;
+  font-weight: $font-weight-regular;
+  line-height: 1.375;
+}
+
+/**
+* Buttons
+*/
+.btn {
+  border-radius: 0;
+  padding: 8px 15px;
+  text-transform: uppercase;
+}
+
+span {
+  font-size: 1.3rem;
+  font-weight: $font-weight-medium;
+}
+
+/**
+* Images
+*/
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+// TinyMCE editor classes
+.captionImage {
+  &.left {
+    margin-right: auto;
+  }
+
+  &.right {
+    margin-left: auto;
+  }
+
+  &.center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.caption {
+  &.left {
+    text-align: left;
+  }
+
+  &.center {
+    text-align: center;
+  }
+
+  &.right {
+    text-align: right;
+  }
+}
